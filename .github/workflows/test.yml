@@ -1,0 +1,12 @@
+name: test
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test
+        run: echo exec_test
