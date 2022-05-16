@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - name: coverage
-      run: echo report_coverage
+    steps:
+      - uses: actions/checkout@v2
+      - name: coverage
+        run: echo report_coverage
