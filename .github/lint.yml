@@ -1,0 +1,12 @@
+name: lint
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  step:
+    - uses: actions/checkout@v2
+    - name: lint
+      run: echo exec_lint
